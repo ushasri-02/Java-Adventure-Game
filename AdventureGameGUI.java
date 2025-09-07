@@ -53,7 +53,7 @@ public class AdventureGameGUI {
     // Load the image
     if (imageName != null && !imageName.isEmpty()) {
         try {
-            ImageIcon icon = new ImageIcon(getClass().getResource("C:\\usha\\java_assig\\IMP\\AdventureGame\\images\\" + imageName));
+            ImageIcon icon = new ImageIcon(getClass().getResource("C:images\\" + imageName));
             imageLabel.setIcon(icon); // Set original icon
             resizeImage(); // Scale to panel size
         } catch (Exception e) {
@@ -302,6 +302,7 @@ public class AdventureGameGUI {
         SwingUtilities.invokeLater(AdventureGameGUI::new);
     }
 }
+
 
 
 
